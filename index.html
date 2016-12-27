@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+	<title>Haz10</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opaco">
+				<h1 class="text-center title">Haz10</h1>
+				<p class="text-center">Completa el formulario y luego haz click en analizar para obtener la suma y el resultado.</p>
+				<hr>
+				<div class="row">
+				    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="numero_a">Ingresa un número </label>
+                            <input type="text" class="form-control" id="numero_a" placeholder="0">
+                        </div>    
+				    </div>
+				    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="numero_b">Ingresa un número </label>
+                            <input type="text" class="form-control" id="numero_b" placeholder="0">
+                        </div>    
+				    </div>
+				</div>
+				
+                <button onclick="calcular()" class="btn btn-info btn-block" style="color:#fff;font-size:20px;">Analizar</button>
+                    <h4 class="text-center text-info">Suma:</h4>
+                    <div id="salida" style="font-size:25px; color:#ffffff;" class="text-center">-</div>
+                    <h4 class="text-center text-info">Resultado:</h4>
+                    <div id="salida2" style="font-size:25px; color:#ffffff;" class="text-center">-</div>
+                     <h5 class="text-center">Si el número "a" es 10 ó el número "b" es 10 ó la suma es 10 entonces el resultado es 1, caso contrario el resultado es 0.</h5> 
+            </div>
+        </div>
+	</div>
+</body>
+<script src="main.js"></script>
+</html>
