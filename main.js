@@ -6,7 +6,7 @@ function calcular()
     var salida2 = document.getElementById("salida2");
     var suma = a + b;
     
-	if (a == 10 || b == 10 || suma == 10) {
+	if ((a == 10 && b != 10) || (b == 10 && a != 10) || (suma == 10)) {
         salida.innerHTML = suma;
         salida2.innerHTML = "1";
         
